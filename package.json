@@ -1,0 +1,25 @@
+{ 
+  "name": "walker",
+  "description": "Walk a route and do stuff.",
+  "version": "0.0.1",
+  "licenses": [{
+    "type": "MIT",
+    "url": "TODO"
+  }],
+  "author": { "name": "James Bloomer", "url": "https://github.com/jamesbloomer" },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jamesbloomer/node-walker.git" 
+  },
+  "keywords": ["geo", "route", "walk", "walker"],
+  "dependencies": {
+	"request" : "2.9.x"
+  },
+  "devDependencies" : {
+		"mocha" : "x.x.x",
+		"sinon" : "x.x.x"
+	},
+  "main": "./server",
+  "scripts": { "test": "mocha test/*" },
+  "engines": { "node": ">= 0.6.1" }
+}

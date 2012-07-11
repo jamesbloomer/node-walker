@@ -19,7 +19,7 @@
 		"mocha" : "x.x.x",
 		"sinon" : "x.x.x"
 	},
-  "main": "./lib/walker",
+  "main": "./lib/walker.js",
   "scripts": { "test": "mocha test/*" },
   "engines": { "node": ">= 0.4.x" }
 }

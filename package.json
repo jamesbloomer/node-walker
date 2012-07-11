@@ -1,6 +1,6 @@
 { 
-  "name": "walker",
-  "description": "Walk a route and do stuff.",
+  "name": "route-walker",
+  "description": "Walk a geo route and do stuff.",
   "version": "0.0.1",
   "licenses": [{
     "type": "MIT",
@@ -21,5 +21,5 @@
 	},
   "main": "./server",
   "scripts": { "test": "mocha test/*" },
-  "engines": { "node": ">= 0.6.1" }
+  "engines": { "node": ">= 0.4.x" }
 }

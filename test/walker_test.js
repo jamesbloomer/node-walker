@@ -4,22 +4,16 @@ var mocha = require('mocha'),
     walker = require('../lib/walker.js');
 
 describe('walker', function(){
-  describe('#amble()', function(){
-    it('should call the function to stuff the correct number of times given the step number', function(){
-      var dostuff = sinon.stub()
-      walker.amble({lng : 0, lat : 20}, {lng : 10, lat : 30}, 10, dostuff);
-      assert.equal(dostuff.callCount, 11);
-      assert.equal(dostuff.getCall(0).calledWith(null, {lng : 0, lat : 20}), true);
-      assert.equal(dostuff.getCall(1).calledWith(null, {lng : 1, lat : 21}), true);
-      assert.equal(dostuff.getCall(2).calledWith(null, {lng : 2, lat : 22}), true);
-      assert.equal(dostuff.getCall(3).calledWith(null, {lng : 3, lat : 23}), true);
-      assert.equal(dostuff.getCall(4).calledWith(null, {lng : 4, lat : 24}), true);
-      assert.equal(dostuff.getCall(5).calledWith(null, {lng : 5, lat : 25}), true);
-      assert.equal(dostuff.getCall(6).calledWith(null, {lng : 6, lat : 26}), true);
-      assert.equal(dostuff.getCall(7).calledWith(null, {lng : 7, lat : 27}), true);
-      assert.equal(dostuff.getCall(8).calledWith(null, {lng : 8, lat : 28}), true);
-      assert.equal(dostuff.getCall(9).calledWith(null, {lng : 9, lat : 29}), true);
-      assert.equal(dostuff.getCall(10).calledWith(null, {lng : 10, lat : 30}), true);
+  describe('#decodeLine()', function(){
+    it('should return correct points for an encoded line', function(){
+      var points = walker.decodeLine('utq~FfxdvOp@ioF~qCiC');
+      assert.equal(points.length, 3);
+      assert.equal(points[0][0], 41.87483);
+      assert.equal(points[0][1], -87.68404000000001);
+      assert.equal(points[1][0], 41.87458);
+      assert.equal(points[1][1], -87.64559000000001);
+      assert.equal(points[2][0], 41.851060000000004);
+      assert.equal(points[2][1], -87.6449);
     })
   })
 })

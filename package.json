@@ -13,7 +13,8 @@
   },
   "keywords": ["geo", "route", "walk", "walker"],
   "dependencies": {
-	"request" : "2.9.x"
+	"request" : "2.9.x",
+        "async" : "0.1.x"
   },
   "devDependencies" : {
 		"mocha" : "x.x.x",

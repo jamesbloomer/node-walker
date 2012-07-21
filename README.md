@@ -10,6 +10,7 @@ and then calls a function for each point.
   npm install route-walker
   
 ## Usage
+  ```javascript
   var walker = require('route-walker');
 
   var start = 'London,UK';
@@ -25,3 +26,4 @@ and then calls a function for each point.
   }, function(e) {
       // end of route...
   });
+  ```

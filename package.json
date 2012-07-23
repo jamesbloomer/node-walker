@@ -22,5 +22,5 @@
 	},
   "main": "./lib/walker.js",
   "scripts": { "test": "mocha test/*" },
-  "engines": { "node": ">= 0.4.x" }
+  "engines": { "node": ">= 0.6.x" }
 }

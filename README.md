@@ -1,6 +1,7 @@
 # route-walker
 
 Walks a route and does stuff.
+[![Build Status](https://secure.travis-ci.org/jamesbloomer/node-walker.png?branch=master)](http://travis-ci.org/jamesbloomer/node-walker)
 
 ## Details
 Calls Google Directions API for the given start and end point, decodes the polyline 
